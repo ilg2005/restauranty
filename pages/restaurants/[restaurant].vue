@@ -25,9 +25,13 @@
 import restaurants from "@/data.json";
 
 const route = useRoute();
+const router = useRouter();
 const restaurantName = route.params.restaurant;
 
 const restaurant = restaurants.filter(r => r.name === restaurantName)[0];
+if (!restaurant) {
+  router.push('/404');
+}
 </script>
 
 <style scoped>
