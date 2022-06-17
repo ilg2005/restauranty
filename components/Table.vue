@@ -11,7 +11,7 @@
         :key="restaurant.id"
     >
       <th scope="row" class="rank">{{ restaurant.rank }}</th>
-      <td class="link">{{ restaurant.name }}</td>
+      <td class="header link"><a :href="`/restaurants/${restaurant.name}`">{{ restaurant.name }}</a></td>
     </tr>
     </tbody>
   </table>
@@ -43,7 +43,7 @@ thead {
 .rank {
   color: black;
 }
-.link {
+.link a {
   text-decoration: none;
   color: rgb(228, 157, 27) !important;
   width: auto;
