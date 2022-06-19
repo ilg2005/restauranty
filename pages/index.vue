@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar/>
     <div class="container mt-5 text-center">
       <h1>Welcome to Restaurantly!</h1>
       <a href="/restaurants">Go to restaurants?</a>

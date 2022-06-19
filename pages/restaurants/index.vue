@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar/>
     <div class="container mt-5 text-center">
       <h1 class="text-uppercase">Top 50: The Ranking</h1>
         <div class="row">

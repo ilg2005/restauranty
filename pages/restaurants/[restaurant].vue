@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar/>
     <div class="restaurant-container mt-10">
       <div class="image-container">
         <img :src="restaurant.imageUrl" alt="Restaurant picture" />
