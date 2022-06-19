@@ -1,22 +1,24 @@
 <template>
   <div>
-    <div class="restaurant-container mt-10">
-      <div class="image-container">
-        <img :src="restaurant.imageUrl" alt="Restaurant picture" />
-      </div>
-      <div class="info-container">
-        <h1>{{ restaurantName }}</h1>
-        <div class="stats-container">
-          <h5>Revenue (in billions)</h5>
-          <p>${{ restaurant.revenue }}</p>
+    <NuxtLayout name="custom">
+      <div class="restaurant-container mt-10">
+        <div class="image-container">
+          <img :src="restaurant.imageUrl" alt="Restaurant picture" />
         </div>
-        <div class="stats-container">
-          <h5>Number of Stores</h5>
-          <p>{{ restaurant.numberOfStores }}</p>
+        <div class="info-container">
+          <h1>{{ restaurantName }}</h1>
+          <div class="stats-container">
+            <h5>Revenue (in billions)</h5>
+            <p>${{ restaurant.revenue }}</p>
+          </div>
+          <div class="stats-container">
+            <h5>Number of Stores</h5>
+            <p>{{ restaurant.numberOfStores }}</p>
+          </div>
+          <p class="content">{{ restaurant.content }}</p>
         </div>
-        <p class="content">{{ restaurant.content }}</p>
       </div>
-    </div>
+    </NuxtLayout>
   </div>
 </template>
 

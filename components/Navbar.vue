@@ -5,10 +5,19 @@
         <a class="navbar-brand" href="/">Restaurantly</a>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <NuxtLink class="nav-link"
+                      aria-current="page"
+                      to="/"
+                      active-class="active"
+                      exact-active-class="active"
+            >Home</NuxtLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/restaurants">Restaurants</a>
+            <NuxtLink class="nav-link"
+                      to="/restaurants"
+                      active-class="active"
+                      exact-active-class="active"
+            >Restaurants</NuxtLink>
           </li>
         </ul>
       </div>

@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div class="container mt-5 text-center">
-      <h1 class="text-uppercase">Top 50: The Ranking</h1>
+    <NuxtLayout name="custom">
+      <div class="container mt-5 text-center">
+        <h1 class="text-uppercase">Top 50: The Ranking</h1>
         <div class="row">
           <Table class="col" :restaurants="data1"/>
           <Table class="col" :restaurants="data2"/>
         </div>
-    </div>
+      </div>
+    </NuxtLayout>
   </div>
 </template>
 

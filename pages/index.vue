@@ -2,7 +2,7 @@
   <div>
     <div class="container mt-5 text-center">
       <h1>Welcome to Restaurantly!</h1>
-      <a href="/restaurants">Go to restaurants?</a>
+      <NuxtLink to="/restaurants">Go to restaurants?</NuxtLink>
     </div>
   </div>
 </template>
