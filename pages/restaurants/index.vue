@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Head>
+      <Title>Restaurantly - Top 50</Title>
+    </Head>
     <NuxtLayout name="custom">
       <div class="container mt-5 text-center">
         <h1 class="text-uppercase">Top 50: The Ranking</h1>

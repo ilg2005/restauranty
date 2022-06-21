@@ -24,12 +24,17 @@
 
 <script setup>
 import restaurants from "@/data.json";
+import {useHead} from "nuxt/app";
 
 const route = useRoute();
 const router = useRouter();
 const restaurantName = route.params.restaurant;
 
 const restaurant = restaurants.filter(r => r.name === restaurantName)[0];
+useHead({
+  title: restaurant ? restaurantName : '404 - Not Found',
+})
+
 if (!restaurant) {
   router.push('/404');
 }
