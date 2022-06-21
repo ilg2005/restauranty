@@ -8,6 +8,11 @@
           <Table class="col" :restaurants="data2"/>
         </div>
       </div>
+      <template #footer>
+        <div class="text-center mb-5">
+          <a href="#">Contact us</a>
+        </div>
+      </template>
     </NuxtLayout>
   </div>
 </template>

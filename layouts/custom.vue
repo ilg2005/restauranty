@@ -2,6 +2,7 @@
   <div>
     <slot/>
     <Ad/>
+    <slot name="footer"></slot>
   </div>
 </template>
 
